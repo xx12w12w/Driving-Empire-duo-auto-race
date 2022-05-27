@@ -1,0 +1,38 @@
+getgenv().autorace =  true
+
+local LocalPlayer = game:GetService("Players").LocalPlayer
+local Character = LocalPlayer.Character
+local Humanoid = Character:FindFirstChildWhichIsA("Humanoid")
+local SeatPart = Humanoid.SeatPart
+local Vehicle = SeatPart.Parent
+
+Vehicle.PrimaryPart = SeatPart
+Character.Parent = Vehicle
+Vehicle:MoveTo(Vector3.new(-806.709412, 31.6986351, 255.431885, 0.535204113, 0.283660412, -0.795671642, 0, 0.941932321, 0.335802943, 0.844722867, -0.179723114, 0.50412601))
+Character.Parent = workspace
+
+while getgenv().autorace ==  true do
+    wait()
+if getgenv().autorace ==  true and game:GetService("Workspace").Game.Races.Queues.Drag.Drag.Container.State.Title.Text == "Starting in 10! (2/2)" then 
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "YUB",
+Text = "Start Race You noob",
+Duration = 30,
+Button1 = "Please wait!",
+})
+
+wait(36)
+
+Vehicle.PrimaryPart = SeatPart
+Character.Parent = Vehicle
+Vehicle:MoveTo(Vector3.new(-2467.58862, 30.385622, 285.217621, -0.116438776, -0.862300992, 0.492827624, 0, 0.496202886, 0.86820662, -0.993197918, 0.10109292, -0.057777252))
+Character.Parent = workspace
+
+wait(1)
+Vehicle.PrimaryPart = SeatPart
+Character.Parent = Vehicle
+Vehicle:MoveTo(Vector3.new(-806.709412, 31.6986351, 255.431885, 0.535204113, 0.283660412, -0.795671642, 0, 0.941932321, 0.335802943, 0.844722867, -0.179723114, 0.50412601))
+Character.Parent = workspace
+wait(1)
+end
+end
